@@ -7,7 +7,7 @@ function getAllNames() {
         let constellationNames
          = Response.data.map(constellation=> constellation.name)
          console.log(constellationNames)
-         .catch(err=> console.log(err))
+         //.catch(err=> console.log(err))
 
       })
 }
@@ -17,7 +17,7 @@ function getConstellationsByQuadrant(quadrant) {
                .then(Response=> {
                  const constellations = Response.data.filter(stars=> stars.quadrant === quadrant)
                  console.log(constellations)
-                   .catch(error=> console.log(error))
+                   //.catch(error=> console.log(error))
                })
 }
 
